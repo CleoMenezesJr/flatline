@@ -27,4 +27,4 @@ To facilitate the installation process of Flatpak applications through the websi
 I want to thank [Lains](https://github.com/lainsce) for taking the trouble to create such a cool icon, thanks also to Nahuel for bringing the idea to the table.
 
 
-Use GNOME Web aka Epiphany? [Also check this extension](https://github.com/GNOME-Web-Extensions/flatline) (WIP)
+Use GNOME Web aka Epiphany? [Also check this extension](https://github.com/GNOME-Web-Extensions/Flatline) (WIP)
