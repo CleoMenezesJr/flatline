@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Flatline",
+  "version": "1.0",
+
+  "description": "Open apps directly in GNOME Software by clicking Install from Flathub and apps.gnome.",
+
+  "icons": {
+    "48": "icons/flatline-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.flathub.org/*", "*://apps.gnome.org/*"],
+      "js": ["main.js"]
+    }
+  ]
+
+}
+
