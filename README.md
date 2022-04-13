@@ -1,4 +1,4 @@
-# <sub><img src="icons/flatline-48.png" width=64px height=64px></sub> Flatline
+# <sub><img src="icons/flatline-98.png" width=64px height=64px></sub> Flatline
 
 #### Open apps directly in GNOME Software by clicking Install from Flathub and apps.gnome.
 
