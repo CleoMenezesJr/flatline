@@ -12,6 +12,11 @@
 2. Open Firefox browser and navigate to `about:debugging`
 3. Click "Load Temporary Add-on" and from the file browser, choose `manifest.json`
 
+### Support
+- [x] Flathub
+- [x] Apps GNOME
+- [ ] AppCenter
+
 ## The Why
 
 To facilitate the installation process of Flatpak applications through the websites flathub.org and app.gnome.org, I created this simple extension that, through appstream, opens GNOME Software directly in the app's details panel.
@@ -22,4 +27,4 @@ To facilitate the installation process of Flatpak applications through the websi
 I want to thank [Lains](https://github.com/lainsce) for taking the trouble to create such a cool icon, thanks also to Nahuel for bringing the idea to the table.
 
 
-
+Use GNOME Web aka Epiphany? [Also check this extension](https://github.com/GNOME-Web-Extensions/flatline) (WIP)
