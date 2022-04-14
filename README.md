@@ -23,7 +23,7 @@ To facilitate the installation process of Flatpak applications through the websi
 
 ## Requirements
 
-- It is necessary to have Flatpak installer
+- It is necessary to have [Flatpak](https://github.com/flatpak/flatpak) installed
 - [Flathub repositories are required](https://www.flatpak.org/setup/)
 - You must have [GNOME Software](https://apps.gnome.org/app/org.gnome.Software/) installed
 
