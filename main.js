@@ -1,5 +1,4 @@
 const checkLoadPage = setInterval(() => {
-    console.log('opa')
     const pathname = window.location.pathname;
 
     if (window.location.href.includes("beta") && window.location.href.includes("details")) replaceButton(pathname)
@@ -25,7 +24,6 @@ function replaceButton(pathname) {
     let newButton = oldButton.cloneNode(true);
 
     if (newButton.id != "installButton") {
-        console.log('eita')
         newButton.id = "installButton";
         newButton.onclick = () => window.location = "appstream://" + pathname.split("/")[3]
 
