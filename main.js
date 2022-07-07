@@ -20,7 +20,7 @@ function replaceLink(pathname) {
 
 function replaceButton(pathname) {
     // Flathub beta
-    let oldButton = document.querySelector(".Button_primaryButton__jhRGg")
+    let oldButton = Array.from(document.querySelectorAll('button')).find(el => el.textContent === 'Install')
     let newButton = oldButton.cloneNode(true);
 
     if (newButton.id != "installButton") {
