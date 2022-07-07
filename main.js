@@ -3,7 +3,7 @@ const checkLoadPage = setInterval(() => {
 
     if (window.location.href.includes("beta") && window.location.href.includes("details")) replaceButton(pathname)
     replaceLink(pathname)
-}, 300);
+}, 500);
 
 function replaceLink(pathname) {
     // Flathub
@@ -20,12 +20,14 @@ function replaceLink(pathname) {
 
 function replaceButton(pathname) {
     // Flathub beta
-    let oldButton = Array.from(document.querySelectorAll('button')).find(el => el.textContent === 'Install')
+    let oldButton = document.querySelectorAll("button")[0];
     let newButton = oldButton.cloneNode(true);
+    const occurrences = (pathname.match(/\//g) || []).length;
+    const app = occurrences == 4 ? pathname.split("/")[4] : pathname.split("/")[3];
 
     if (newButton.id != "installButton") {
         newButton.id = "installButton";
-        newButton.onclick = () => window.location = "appstream://" + pathname.split("/")[3]
+        newButton.onclick = () => window.location = "appstream://" + app
 
         oldButton.parentNode.replaceChild(newButton, oldButton);
     }
