@@ -2,9 +2,9 @@
 
   "manifest_version": 2,
   "name": "Flatline",
-  "version": "1.2",
+  "version": "1.3",
 
-  "description": "Open apps directly in GNOME Software by clicking Install from Flathub and apps.gnome.",
+  "description": "Select apps directly from your favorite software center by clicking Install from Flathub and apps.gnome.",
 
   "icons": {
     "48": "icons/flatline-48.png"
