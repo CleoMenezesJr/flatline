@@ -1,8 +1,9 @@
 # <sub><img src="other/promotion/icon/flatline-128.png" width=64px height=64px></sub> Flatline
 
-#### Select apps directly from your favorite software center by clicking Install from Flathub or apps.gnome..
+#### Select apps directly from your favorite software center by clicking Install from Flathub or apps.gnome.
 
 [<img src="other/promotion/badges/firefox.png" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/flatline-flatpak/)
+[<img src="other/promotion/badges/donate_paypal.svg" height=60px alt="Paypal donation">](https://www.paypal.com/donate/?hosted_button_id=7KDCH44AMMCS2)
 
 <img src="other/promotion/screenshots/example.gif" width="640px">
 
@@ -20,7 +21,7 @@ To facilitate the installation process of Flatpak applications through the websi
 
 - [Flatpak](https://github.com/flatpak/flatpak) installed.
 - [Flathub](https://www.flatpak.org/setup/) and/or other Flatpak repository.
-- [GNOME Software](https://apps.gnome.org/app/org.gnome.Software/) or any software center with Flatpak support
+- [GNOME Software](https://apps.gnome.org/app/org.gnome.Software/) or any software center with Flatpak support.
 
 ## Known Limitations
 
