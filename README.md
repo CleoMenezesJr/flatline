@@ -1,21 +1,28 @@
-# <sub><img src="other/promotion/icon/flatline-128.png" width=64px height=64px></sub> Flatline
+# <sub><img src="other/promotion/icon/flatline-128.png" height=50px></sub> Flatline
+##### Select apps directly from your favorite software center by clicking Install from Flathub or apps.gnome.
 
-#### Select apps directly from your favorite software center by clicking Install from Flathub or apps.gnome.
+## Installation
+#### Firefox Based Browsers
+[<img src="other/promotion/badges/firefox.png" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/flatline-flatpak/) <br>
 
-[<img src="other/promotion/badges/firefox.png" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/flatline-flatpak/)
-[<img src="other/promotion/badges/donate_paypal.svg" height=60px alt="Paypal donation">](https://www.paypal.com/donate/?hosted_button_id=7KDCH44AMMCS2)
+#### Chromium Based Browsers
+1. Download [this file](https://github.com/CleoMenezesJr/flatline/archive/refs/heads/main.zip).
+2. Extract the zip file
+3. Open your browser's extension manager
+4. Activate developer mode
+5. Load the extension with the option "Load unpacked"
 
-<img src="other/promotion/screenshots/example.gif" width="640px">
 
-### Support
+## The Why
+
+Flatline was created to facilitate the installation process of Flatpak applications from the websites flathub.org and app.gnome.org.
+
+## Support
 - [x] Flathub
 - [x] Flathub
 - [x] Apps GNOME
 - [ ] AppCenter
 
-## The Why
-
-To facilitate the installation process of Flatpak applications through the websites flathub.org and app.gnome.org, I created this simple extension that, through appstream, opens GNOME Software directly in the app's details panel.
 
 ## Requirements
 
@@ -23,13 +30,17 @@ To facilitate the installation process of Flatpak applications through the websi
 - [Flathub](https://www.flatpak.org/setup/) and/or other Flatpak repository.
 - [GNOME Software](https://apps.gnome.org/app/org.gnome.Software/) or any software center with Flatpak support.
 
+## Donations
+[<img src="other/promotion/badges/donate_paypal.svg" height=29px alt="Paypal donation">](https://www.paypal.com/donate/?hosted_button_id=7KDCH44AMMCS2)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P2DSC5F)
+
 ## Known Limitations
 
 Flatline basically uses AppStream to tell GNOME Software (or any software center with Flatpak support) which app to show, however there is no way to specify which repository to show.
 When opening it will be necessary to manually choose the repository.
 If you use distributions that focus heavily on using Flatpaks like Fedora Silverblue, you won't notice this.
 
-### Development
+## Development
 
 1. Clone the repository
 2. Open Firefox browser and navigate to `about:debugging`
