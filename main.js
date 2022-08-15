@@ -1,59 +1,35 @@
 const checkExist = setInterval(() => {
-    let title = document.querySelector("title");
+  let title = document.querySelector("title");
 
-    if (title != null) {
-      function callback(mutations) {
-          const pathname = window.location.pathname;
-          if (
-            window.location.href.includes("beta") &&
-            window.location.href.includes("details")
-          )
-            replaceButton(pathname);
-          replaceLink(pathname);
-      }
-      let observer = new MutationObserver(callback);
-      let config = {
-        childList: true,
-        subtree: true,
-        attributes: true,
-        characterData: true
-      };
+  if (title != null) {
+    function callback(mutations) {
+      const url = new URL(window.location);
+      const pathname = url.pathname;
 
-      observer.observe(title, config);
-        clearInterval(checkExist);
+      if (url.hostname === "beta.flathub.org")
+        replaceFlathubBetaButton(pathname);
+      else if (url.hostname === "flathub.org")
+        replaceFlathubLink(pathname);
+      else if (url.hostname === "apps.gnome.org")
+        replaceAppsGnomeLink(pathname);
+      else if (url.hostname === "appcenter.elementary.io")
+        replaceAppCenterLink(pathname);
+    }
+    let observer = new MutationObserver(callback);
+    let config = {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      characterData: true,
     };
+
+    observer.observe(title, config);
+    clearInterval(checkExist);
+    callback();
+  }
 }, 500);
 
-window.onload = (() => {
-    let oldPushState = history.pushState;
-    history.pushState = function pushState() {
-        let ret = oldPushState.apply(this, arguments);
-        window.dispatchEvent(new Event('pushstate'));
-        window.dispatchEvent(new Event('locationchange'));
-        return ret;
-    };
-
-    let oldReplaceState = history.replaceState;
-    history.replaceState = function replaceState() {
-        let ret = oldReplaceState.apply(this, arguments);
-        window.dispatchEvent(new Event('replacestate'));
-        window.dispatchEvent(new Event('locationchange'));
-        return ret;
-    };
-
-    window.addEventListener('popstate', () => {
-        window.dispatchEvent(new Event('locationchange'));
-    });
-})();
-
-
-function replaceLink(pathname) {
-  // Flathub
-  const flathubInstallButton = document.querySelector("[download]");
-  if (pathname.includes("/details/"))
-    flathubInstallButton.href = "appstream:" + pathname.split("/")[3];
-
-  // Apps GNOME
+function replaceAppsGnomeLink(pathname) {
   const appsGnomeInstallButton = document.querySelector("a.text-button");
   const occurrences = (pathname.match(/\//g) || []).length;
   const app =
@@ -62,9 +38,14 @@ function replaceLink(pathname) {
     appsGnomeInstallButton.href = "appstream:" + app;
 }
 
-function replaceButton(pathname) {
-  // Flathub beta
-  let oldButton = document.querySelectorAll("button")[0];
+function replaceFlathubLink(pathname) {
+  const flathubInstallButton = document.querySelector("[download]");
+  if (pathname.includes("/details/"))
+    flathubInstallButton.href = "appstream:" + pathname.split("/")[3];
+}
+
+function replaceFlathubBetaButton(pathname) {
+  let oldButton = document.querySelectorAll("button")[1];
   let newButton = oldButton.cloneNode(true);
   const occurrences = (pathname.match(/\//g) || []).length;
   const app =
@@ -78,4 +59,10 @@ function replaceButton(pathname) {
   }
 }
 
-
+function replaceAppCenterLink(pathname) {
+  document.querySelectorAll("a").forEach((el) => {
+    if (el.innerText == "Download as Flatpak") {
+      el.href = "appstream:" + pathname;
+    }
+  });
+}
