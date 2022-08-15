@@ -1,11 +1,11 @@
-# <sub><img src="other/promotion/icon/flatline-128.png" height=50px></sub> Flatline
-##### Select apps directly from your favorite software center by clicking Install from Flathub or apps.gnome.
+# <sub><img src="icons/flatline-128.png" height=50px></sub> Flatline
+##### Select apps directly from your favorite software center by clicking Install from Flathub, apps.gnome and AppCenter.
 
 ## Installation
-#### Firefox Based Browsers
-[<img src="other/promotion/badges/firefox.png" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/flatline-flatpak/) <br>
-
+[<img src="other/promotion/badges/firefox.png" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/flatline-flatpak/)
+[<img src="other/promotion/badges/chrome.png" alt="for Chrome" height=60px>](https://addons.mozilla.org/firefox/addon/flatline-flatpak/) <br>
 #### Chromium Based Browsers
+
 1. Download [this file](https://github.com/CleoMenezesJr/flatline/archive/refs/heads/main.zip).
 2. Extract the zip file
 3. Open your browser's extension manager
@@ -15,13 +15,13 @@
 
 ## The Why
 
-Flatline was created to facilitate the installation process of Flatpak applications from the websites flathub.org and app.gnome.org.
+Flatline was created to facilitate the installation process of Flatpak applications from the websites flathub.org, app.gnome.org and appcenter.elementary.io.
 
 ## Support
 - [x] Flathub
 - [x] Flathub
 - [x] Apps GNOME
-- [ ] AppCenter
+- [x] AppCenter
 
 
 ## Requirements
