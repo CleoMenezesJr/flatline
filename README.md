@@ -3,15 +3,11 @@
 
 ## Installation
 [<img src="other/promotion/badges/firefox.png" alt="for Firefox">](https://addons.mozilla.org/firefox/addon/flatline-flatpak/)
-[<img src="other/promotion/badges/chrome.png" alt="for Chrome" height=60px>](https://addons.mozilla.org/firefox/addon/flatline-flatpak/) <br>
-#### Chromium Based Browsers
+[<img src="other/promotion/badges/chrome.png" alt="for Chrome" height=60px>](https://chrome.google.com/webstore/detail/flatline/cpbniogoilfagmcoipghkgnpmdglfmjm/) <br>
 
-1. Download [this file](https://github.com/CleoMenezesJr/flatline/archive/refs/heads/main.zip).
-2. Extract the zip file
-3. Open your browser's extension manager
-4. Activate developer mode
-5. Load the extension with the option "Load unpacked"
-
+##### Epiphany (GNOME Web)
+[Check this out...](https://github.com/GNOME-Web-Extensions/Get-Started/wiki/)
+<br>
 
 ## The Why
 
@@ -51,6 +47,3 @@ If you use distributions that focus heavily on using Flatpaks like Fedora Silver
 ## Special thanks
 
 I want to thank [Lains](https://github.com/lainsce) for taking the trouble to create such a cool icon, thanks also to Nahuel for bringing the idea to the table.
-
-
-Use GNOME Web aka Epiphany? [It just works!](https://wiki.gnome.org/Cleo%20Menezes%20Jr./WebExtensions)
