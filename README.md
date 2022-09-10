@@ -14,10 +14,10 @@
 Flatline was created to facilitate the installation process of Flatpak applications from the websites flathub.org, app.gnome.org and appcenter.elementary.io.
 
 ## Support
-- [x] Flathub
-- [x] Flathub
-- [x] Apps GNOME
-- [x] AppCenter
+- [x] [Flathub](https://flathub.org/)
+- [x] [Flathub Beta](https://beta.flathub.org/)
+- [x] [Apps GNOME](https://apps.gnome.org/)
+- [x] [AppCenter](https://appcenter.elementary.io/)
 
 
 ## Requirements
@@ -46,4 +46,4 @@ If you use distributions that focus heavily on using Flatpaks like Fedora Silver
 
 ## Special thanks
 
-I want to thank [Lains](https://github.com/lainsce) for taking the trouble to create such a cool icon, thanks also to Nahuel for bringing the idea to the table.
+I want to thank [Lains](https://github.com/lainsce) for taking the trouble to create such a cool icon, thanks also to [Nahuel](https://github.com/nahuelwexd) for bringing the idea to the table.
