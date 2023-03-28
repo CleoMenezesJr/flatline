@@ -6,7 +6,11 @@
 [<img src="other/promotion/badges/chrome.png" alt="for Chrome" height=60px>](https://chrome.google.com/webstore/detail/flatline/cpbniogoilfagmcoipghkgnpmdglfmjm/) <br>
 
 ##### Epiphany (GNOME Web)
-[Check this out...](https://github.com/GNOME-Web-Extensions/Get-Started/wiki/)
+
+- Enable Web Extensions (This feature is experimental)
+> flatpak run --command=gsettings org.gnome.Epiphany set org.gnome.Epiphany.web:/org/gnome/epiphany/web/ enable-webextensions true
+- Open Preferences > Extensions
+- Click on add new extension and choose the latest release .zip file that you previously downloaded
 <br>
 
 ## The Why
