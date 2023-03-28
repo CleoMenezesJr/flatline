@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Flatline",
-  "version": "1.4",
+  "version": "1.5",
 
   "description": "Select apps directly from your favorite software center by clicking Install from Flathub, apps.gnome and AppCenter.",
 
