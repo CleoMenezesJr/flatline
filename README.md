@@ -9,10 +9,11 @@
 
 ##### Epiphany (GNOME Web)
 
-- Enable Web Extensions (This feature is experimental)
-  > flatpak run --command=gsettings org.gnome.Epiphany set org.gnome.Epiphany.web:/org/gnome/epiphany/web/ enable-webextensions true
-- Open Preferences > Extensions
-- Click on add new extension and choose the latest release .zip file that you previously downloaded
+1. Enable Web Extensions (This feature is experimental)
+- - > flatpak run --command=gsettings org.gnome.Epiphany set org.gnome.Epiphany.web:/org/gnome/epiphany/web/ enable-webextensions true
+2. Download Flatline via addons.mazilla.org
+3. Open GNOME Web and go to Preferences > Extensions
+4. Click on Add New Extension and choose the file you previously downloaded
   <br>
 
 ## The Why
