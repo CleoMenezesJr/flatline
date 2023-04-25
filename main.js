@@ -6,9 +6,7 @@ const checkExist = setInterval(() => {
       const url = new URL(window.location);
       const pathname = url.pathname;
 
-      if (url.hostname === "beta.flathub.org")
-        replaceFlathubBetaButton(pathname);
-      else if (url.hostname === "flathub.org") replaceFlathubLink(pathname);
+      if (url.hostname === "flathub.org") replaceFlathubButton(pathname);
       else if (url.hostname === "apps.gnome.org")
         replaceAppsGnomeLink(pathname);
       else if (url.hostname === "appcenter.elementary.io")
@@ -37,13 +35,7 @@ function replaceAppsGnomeLink(pathname) {
     appsGnomeInstallButton.href = "appstream:" + app;
 }
 
-function replaceFlathubLink(pathname) {
-  const flathubInstallButton = document.querySelector("[download]");
-  if (pathname.includes("/details/"))
-    flathubInstallButton.href = "appstream:" + pathname.split("/")[3];
-}
-
-function replaceFlathubBetaButton(pathname) {
+function replaceFlathubButton(pathname) {
   const languageButtonsLabel = {
     id: "Pasang",
     "pt-BR": "Instalar",
@@ -97,16 +89,17 @@ function replaceFlathubBetaButton(pathname) {
     )
     .snapshotItem(0);
 
-  let newButton = oldButton.cloneNode(true);
-  const occurrences = (pathname.match(/\//g) || []).length;
-  const app =
-    occurrences == 3 ? pathname.split("/")[3] : pathname.split("/")[2];
+  if (oldButton) {
+    let newButton = oldButton.cloneNode(true);
 
-  if (newButton.id != "customInstallButton") {
-    newButton.id = "customInstallButton";
-    newButton.onclick = () => (window.location = "appstream:" + app);
-
-    oldButton.parentNode.replaceChild(newButton, oldButton);
+    if (newButton.id != "customInstallButton") {
+      newButton.id = "customInstallButton";
+      newButton.removeAttribute("href");
+      newButton.href =
+        "appstream:" +
+        oldButton.href.split("/").pop().replace(".flatpakref", "");
+      oldButton.parentNode.replaceChild(newButton, oldButton);
+    }
   }
 }
 
